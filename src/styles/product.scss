@@ -1,0 +1,39 @@
+.single-product-wrap {
+  //padding-top: 6rem;
+  span {
+    opacity: 0.5;
+  }
+  p {
+    margin: 0;
+  }
+  .back-svg {
+    position: relative;
+    cursor: pointer;
+    a {
+      position: absolute;
+      z-index: 99;
+      top: 2rem;
+      left: 0;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .image-slider {
+    padding-top: 6rem;
+    .slider-inner {
+    }
+  }
+  .item-title {
+    margin-top: 2rem;
+  }
+  .item-price {
+    margin-top: 1rem;
+  }
+  .item-description {
+    margin-top: 1rem;
+  }
+  .contact-button {
+  }
+}

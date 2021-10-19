@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
+const path = require(`path`)
 
-// You can delete this file if you're not using it
+exports.createPages = ({ actions: { createPage } }) => {
+    const products = require("./src/components/data/products.json")
+    products.forEach(product => {
+      createPage({
+        path: `/furniture/${product.id}`,
+        component: path.resolve(`${product.filePath}`),
+        context: product,
+      })
+    })
+  }

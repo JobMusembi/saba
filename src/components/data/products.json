@@ -1,0 +1,87 @@
+[
+    {
+        "id": "kenge-chair",
+        "featureImage": {
+            "src": 1
+        },
+        "allProdImage": {
+            "srcOne": 1,
+            "srcTwo": 2,
+            "srcThree": 3
+        },
+        "name": "Kenge Chair",
+        "usPrice": "$500",
+        "kesPrice": "kes50,000",
+        "description": "Made from mvule hardwood",
+        "category": "seating",
+        "filePath" : "./src/templates/product.js"
+    },
+    {
+        "id": "jua-decks",
+        "featureImage": {
+            "src": 4
+        },
+        "allProdImage": {
+            "srcOne": 4,
+            "srcTwo": 5,
+            "srcThree": 6
+        },
+        "name": "Jua Decks",
+        "usPrice": "$500",
+        "kesPrice": "kes50,000",
+        "description": "Made from mvule hardwood",
+        "category": "outdoor",
+        "filePath" : "./src/templates/product.js"
+    },
+    {
+        "id": "kitanda-nyota",
+        "featureImage": {
+            "src": 7
+        },
+        "allProdImage": {
+            "srcOne": 7,
+            "srcTwo": 8,
+            "srcThree": 9
+        },
+        "name": "Kitanda Nyota",
+        "usPrice": "$500",
+        "kesPrice": "kes50,000",
+        "description": "Made from mvule hardwood",
+        "category": "beds",
+        "filePath" : "./src/templates/product.js"
+    },
+    {
+        "id": "mashirbirya-table",
+        "featureImage": {
+            "src": 10
+        },
+        "allProdImage": {
+            "srcOne": 10,
+            "srcTwo": 11,
+            "srcThree": 12
+        },
+        "name": "Mashirbirya Table",
+        "usPrice": "$500",
+        "kesPrice": "kes50,000",
+        "description": "Made from mvule hardwood",
+        "category": "tables",
+        "filePath" : "./src/templates/product.js"
+    },
+    {
+        "id": "pembe-chair",
+        "featureImage": {
+            "src": 13
+        },
+        "allProdImage": {
+            "srcOne": 13,
+            "srcTwo": 14,
+            "srcThree": 15
+        },
+        "name": "Pembe Chair",
+        "usPrice": "$500",
+        "kesPrice": "kes50,000",
+        "description": "Made from mvule hardwood",
+        "category": "seating",
+        "filePath" : "./src/templates/product.js"
+    }
+]
