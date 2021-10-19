@@ -12,11 +12,11 @@
     a {
       position: absolute;
       z-index: 99;
-      top: 2rem;
+      top: 2.5rem;
       left: 0;
       img {
-        width: 24px;
-        height: 24px;
+        width: 8px;
+        //height: 24px;
       }
     }
   }
@@ -35,5 +35,14 @@
     margin-top: 1rem;
   }
   .contact-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 200px;
+    height: 48px;
+    background: $black;
+    color: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

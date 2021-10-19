@@ -24,6 +24,7 @@ const Layout = ({ children }) => {
   }, [])
 
   const [menuState, setMenuState] = useState(false)
+
   
   return (
     <motion.div ref={app} exit={{ opacity: 0 }} >

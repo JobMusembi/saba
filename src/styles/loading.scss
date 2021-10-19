@@ -11,8 +11,11 @@
   color: $background;
   .diamond-icon {
     position: absolute;
-    top: 3rem;
-    left: 4rem;
+    top: 2.5rem;
+    left: 3rem;
+    @media (max-width: $s) {
+      left: 2rem;
+    }
     img {
       width: 24px;
       height: 24px;
@@ -20,18 +23,13 @@
   }
   .progress {
     position: absolute;
-    top: 8rem;
-    left: 8rem;
+    top: 3rem;
+    left: 5rem;
     font-size: $font8;
     font-weight: 400;
     font-style: italic;
-    @media (max-width: 1024px) {
-      top: 3rem;
-      left: 3rem;
-    }
-    @media (max-width: 480px) {
-      top: 3rem;
-      left: 1.5rem;
+    @media (max-width: $s) {
+      left: 4rem;
     }
   }
 }

@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from "react"
+//import { useLocation } from "@reach/router"
+
 import { Image } from "../components/gatsby-images/image"
-import backArrow from "../assets/svg/arrow-back.svg"
+import backArrow from "../assets/svg/arrow-left.svg"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from 'gatsby';
+import Contactform from "../components/contactform";
 
 
 const Product = ({ pageContext }) => {
+
+    const [contactState, setContactState] = useState(false)
 
     const product = pageContext
 
@@ -33,6 +38,8 @@ const Product = ({ pageContext }) => {
 
     
     return (
+        <>
+        <Contactform contactState={contactState} setContactState={setContactState} />
         <div className="container">
             <div className="single-product-wrap">
                 <div className="back-svg">
@@ -62,11 +69,17 @@ const Product = ({ pageContext }) => {
                 <span>description</span>
                 <p>{product.description}</p>
             </div>
-            <div className="contact-button">
-
+            <div 
+            role = "button"
+            tabIndex={0}
+            onClick={() => setContactState(!contactState)}
+            onKeyDown={() => setContactState(!contactState)}
+            className="contact-button" >
+                    <h6>contact&nbsp;for&nbsp;purchase</h6>
             </div>
         </div>
         </div>
+        </>
     );
 }
 

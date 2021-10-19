@@ -1,0 +1,65 @@
+.contact-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  overflow: hidden;
+  background-color: $background;
+  color: $text;
+  .close-form-wrap {
+    position: relative;
+    .close-form-inner {
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      z-index: 99;
+      height: 40px;
+      width: 40px;
+      .close-form {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      span {
+        height: 1px;
+        width: 24px;
+        margin: 2px;
+        display: block;
+        background: $text;
+      }
+    }
+  }
+  .contact-form {
+    position: relative;
+    padding-top: 3rem;
+    width: 50%;
+    @media (max-width: $s) {
+      width: 100%;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        input {
+          padding: 15px 10px;
+        }
+      }
+      button {
+        width: 200px;
+        height: 48px;
+        outline: none;
+        background: $black;
+        color: $background;
+        border: none;
+      }
+    }
+  }
+}
