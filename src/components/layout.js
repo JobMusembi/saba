@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import PropTypes from "prop-types"
 
 //styles
@@ -15,6 +15,8 @@ const Layout = ({ children }) => {
 
   const [finishLoading, setFinishLoading] = useState(true)
 
+  const app = useRef()
+
   useEffect(() => {
     setTimeout(() => {
       setFinishLoading(false)
@@ -24,7 +26,7 @@ const Layout = ({ children }) => {
   const [menuState, setMenuState] = useState(false)
   
   return (
-    <motion.div exit={{ opacity: 0 }} >
+    <motion.div ref={app} exit={{ opacity: 0 }} >
       <AnimatePresence>
         {finishLoading ? (
           <Loading key={"home2"}/>
@@ -35,8 +37,8 @@ const Layout = ({ children }) => {
               exit={{ opacity: 0 }}
           >
             <Header 
+            menuState={menuState}
             setMenuState={setMenuState}
-
             />
             <Menu menuState={menuState} setMenuState={setMenuState} />
             <div>

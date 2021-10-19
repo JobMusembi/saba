@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 
 import { motion } from "framer-motion"
 
-import diamondIcon from "../assets/svg/saba-icon-black.svg"
+import diamondIcon from "../assets/svg/saba-icon-white.svg"
 
 const Loading = () => {
     const [counter, setCounter] = useState(0)
