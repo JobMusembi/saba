@@ -1,12 +1,18 @@
 import * as React from "react"
+//import { useLocation } from "@reach/router"
 
-
-const Header = () => {
+const Header = ({ menuState, setMenuState }) => {
+  // const location = useLocation()
+  // useEffect(() => {
+  //   setMenuState(false)
+  // }, [location])
   return (
     <div className="container">
       <div className="header-wrap">
         <div className="header-inner">
-        <div className="hamburger-menu">
+        <div 
+         onClick={() => setMenuState(!menuState)}
+        className="hamburger-menu">
             <span></span>
             <span></span>
         </div>

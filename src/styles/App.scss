@@ -3,7 +3,8 @@
 
 @import "./header.scss";
 @import "./hero.scss";
-//@import "./menu.scss";
+@import "./menu.scss";
+@import "./loading.scss";
 
 @font-face {
   font-family: B;
@@ -130,7 +131,7 @@ p {
   line-height: 1.5;
   font-size: $font7;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   @media (max-width: $xs) {
     font-size: $font8;
   }

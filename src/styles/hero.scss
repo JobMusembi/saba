@@ -29,15 +29,18 @@
   }
   .hero-image {
     margin-bottom: 1rem;
-    //width: 90%;
+
+    @media (max-width: $s) {
+      width: 90%;
+    }
   }
   .hero-location {
     margin-bottom: 4rem;
     span {
       font-family: libre baskerville;
       font-weight: 400;
-      font-style: normal;
-      font-size: $font8;
+      font-style: italic;
+      font-size: $font7;
     }
   }
 }
