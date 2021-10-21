@@ -46,19 +46,19 @@ const Contactform = ({ setContactState, contactState }) => {
                         <form method="post" action="https://getform.io/f/6b7cccff-358c-46f2-a8aa-31bab9842368">
                             <label>
                                 Furniture Name
-                                <input type="text" name="name"/>
+                                <input type="text" name="name" required="required"/>
                             </label>
                             <label>
                                 Your Name
-                                <input type="text" name="name"/>
+                                <input type="text" name="name" required="required"/>
                             </label>
                             <label>
                                 Email
-                                <input type="email" name="email"/>
+                                <input type="email" name="email" required="required" />
                             </label>
                             <label>
                                 Message
-                                <textarea name="message"rows="5" />
+                                <textarea name="message"rows="5" required="required" />
                             </label>
                             <button type="submit"><h6>submit</h6></button>
                             

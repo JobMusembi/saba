@@ -19,6 +19,7 @@ const Product = ({ pageContext }) => {
     const [contactState, setContactState] = useState(false)
 
     const product = pageContext
+    
 
     const settings = {
         dots: false,
@@ -26,14 +27,19 @@ const Product = ({ pageContext }) => {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 3000,
+        autoplaySpeed: 1000,
         cssEase: "linear",
         responsive: [
             {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
+                    autoplay: false,
+                    fade: true,
+                    speed: 500,
+                    dots: false,
+                    arrows: false,
                 }
             }
         ]
@@ -43,8 +49,8 @@ const Product = ({ pageContext }) => {
     return (
         <>
         <Contactform contactState={contactState} setContactState={setContactState} />
-        <div className="container">
-            <div className="single-product-wrap">
+        <div className="single-product-wrap">
+            <div className="container">
                 <div className="back-svg">
                     <Link to="/furniture"><img src={backArrow} alt="arrow back" /></Link>
                 </div>

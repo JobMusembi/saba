@@ -37,11 +37,20 @@
   }
   .hero-location {
     margin-bottom: 4rem;
-    span {
-      font-family: libre baskerville;
-      font-weight: 400;
-      font-style: italic;
-      font-size: $font7;
+    .sign-off {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-family: libre baskerville;
+        font-weight: 400;
+        font-style: italic;
+        font-size: $font7;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

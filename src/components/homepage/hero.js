@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image"
+import sabaLogo from "../../assets/svg/saba-icon-black.svg"
 
 const Hero = () => {
     return (
@@ -28,7 +29,11 @@ const Hero = () => {
                 </div>
                 <div className="hero-location">
                     <p>Made in Lamu Island - Kenya.</p>
+                    <div className="sign-off">
+                    <img src={sabaLogo} alt="saba studios logo" />
                     <span>© {new Date().getFullYear()}</span>
+                    
+                    </div>
                 </div>
 
             </div> 
