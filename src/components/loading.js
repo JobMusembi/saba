@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 
 import { motion } from "framer-motion"
 
-import diamondIcon from "../assets/svg/saba-icon-white.svg"
+import diamondIcon from "../assets/svg/saba-diamond.svg"
 
 const Loading = () => {
     const [counter, setCounter] = useState(0)
@@ -19,9 +19,12 @@ const Loading = () => {
         exit={{ opacity: 0 }}
         className="loading-screen">
             <div className="diamond-icon">
+            <img src={diamondIcon} alt="saba studios diamond icon" />
+            </div>
+            {/* <div className="diamond-icon">
                 <img src={diamondIcon} alt="saba studios diamond icon" />
             </div>
-            <span className="progress">%{counter}</span>
+            <span className="progress">%{counter}</span> */}
         </motion.div>
     );
 }

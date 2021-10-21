@@ -10,6 +10,9 @@ import Slider from "react-slick";
 import { Link } from 'gatsby';
 import Contactform from "../components/contactform";
 
+import { motion } from 'framer-motion';
+
+const transition = { duration: 1, ease: [0.6, -0.05, 0.01, 0.9] }
 
 const Product = ({ pageContext }) => {
 
@@ -58,6 +61,12 @@ const Product = ({ pageContext }) => {
                     </div>
                 </Slider>
             </div>
+            <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ delay: 0.2 ,...transition }}
+            >
             <div className="item-title">
                 <h5>{product.name}</h5>
             </div>
@@ -77,6 +86,7 @@ const Product = ({ pageContext }) => {
             className="contact-button" >
                     <h6>contact&nbsp;for&nbsp;purchase</h6>
             </div>
+            </motion.div>
         </div>
         </div>
         </>

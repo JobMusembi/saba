@@ -53,6 +53,12 @@ const Menu = ({ setMenuState, menuState }) => {
                         exit={{ opacity: 0 }}
                         transition={{ delay: 0.2, ...transition }}
                         ><Link to="/furniture">Furniture</Link></motion.span></li>
+                        <li><motion.span
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ delay: 0.3, ...transition }}
+                        ><Link to="/furniture-index">Index</Link></motion.span></li>
                     </motion.ul>
                 </motion.div>
                 </motion.div>

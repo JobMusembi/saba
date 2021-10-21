@@ -1,35 +1,38 @@
 .loading-screen {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
+  position: absolute;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 99;
   background: $text;
-  color: $background;
+  //color: $background;
   .diamond-icon {
-    position: absolute;
-    top: 2.5rem;
-    left: 3rem;
-    @media (max-width: $s) {
-      left: 2rem;
-    }
+    // position: absolute;
+    // top: 2.5rem;
+    // left: 3rem;
+    // @media (max-width: $s) {
+    //   left: 2rem;
+    // }
     img {
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
     }
   }
-  .progress {
-    position: absolute;
-    top: 3rem;
-    left: 5rem;
-    font-size: $font8;
-    font-weight: 400;
-    font-style: italic;
-    @media (max-width: $s) {
-      left: 4rem;
-    }
-  }
+  // .progress {
+  //   position: absolute;
+  //   top: 3rem;
+  //   left: 5rem;
+  //   font-size: $font8;
+  //   font-weight: 400;
+  //   font-style: italic;
+  //   @media (max-width: $s) {
+  //     left: 4rem;
+  //   }
+  // }
 }

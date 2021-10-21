@@ -3,6 +3,9 @@ import Seo from "../components/seo"
 import {Image} from "../components/gatsby-images/image"
 import menuList from "../components/data/products.json"
 import { Link } from "gatsby"
+import { AnimatePresence, motion } from 'framer-motion';
+
+const transition = { duration: 1, ease: [0.6, -0.05, 0.01, 0.9] }
 
 const Furniture = () => {
 
@@ -16,6 +19,7 @@ const Furniture = () => {
 
     return (
         <>
+        <AnimatePresence exitBeforeEnter>
         <Seo title="Furniture" />
         <div className="container">
         <div className="products-wrap">
@@ -30,14 +34,24 @@ const Furniture = () => {
                     const {id, featureImage, name, usPrice, kesPrice} = elem;
                     return (
                         <Link to={`/furniture/${id}`} key={id}>
-                            <div className="product-container" >
+                            <motion.div 
+                            initial={{ y: 10 }}
+                            animate={{ y: 0 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ ...transition }}
+                            className="product-container" >
                                 <Image src={featureImage.src} />                   
-                                <div className="item-title">
+                                <motion.div 
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ delay: 0.2 ,...transition }}
+                                className="item-title">
                                     <h6>{name}</h6>
                                     <span>{usPrice}</span>
                                     <span>{kesPrice}</span>
-                                </div>
-                            </div>
+                                </motion.div>
+                            </motion.div>
                         </Link>
                     )
                 }   
@@ -46,6 +60,7 @@ const Furniture = () => {
             </div>
         </div>
         </div>
+        </AnimatePresence>
         </>
     );
 }

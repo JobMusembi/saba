@@ -14,6 +14,7 @@
         "kesPrice": "kes50,000",
         "description": "Made from mvule hardwood",
         "category": "seating",
+        "url": "/furniture/kenge-chair",
         "filePath" : "./src/templates/product.js"
     },
     {
