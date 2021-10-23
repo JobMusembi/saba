@@ -24,7 +24,7 @@ const Furniture = () => {
         <div className="container">
         <div className="products-wrap">
             <div className="filter-wrap">
-                <span>filter -</span>
+                <span>filter</span>
                     <button onClick={() => setItems(menuList)} >All</button>
                     <button onClick={() => filterItem('seating')}  >Seating</button>
                     <button onClick={() => filterItem('tables')} >Tables</button>

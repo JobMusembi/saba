@@ -12,7 +12,7 @@
         "name": "Kenge Chair",
         "usPrice": "$500",
         "kesPrice": "kes50,000",
-        "description": "Made from mvule hardwood",
+        "description": "The Mashirbirya chair and Side table re-interprets the mashirbirya pattern from a building element to a domestic object. Made from local Mvule wood by Swahili carpenters, it is a symphony of solid and void, light and shadow, integrating itself into its immediate environment. The minimal, stripped back structure of the chair is intended to frame the handcrafted patterns and highlight the extra-ordinary craftsmanship of the Swahili carpenters.",
         "category": "seating",
         "url": "/furniture/kenge-chair",
         "filePath" : "./src/templates/product.js"
@@ -30,7 +30,7 @@
         "name": "Jua Decks",
         "usPrice": "$500",
         "kesPrice": "kes50,000",
-        "description": "Made from mvule hardwood",
+        "description": "The Mashirbirya chair and Side table re-interprets the mashirbirya pattern from a building element to a domestic object. Made from local Mvule wood by Swahili carpenters, it is a symphony of solid and void, light and shadow, integrating itself into its immediate environment. The minimal, stripped back structure of the chair is intended to frame the handcrafted patterns and highlight the extra-ordinary craftsmanship of the Swahili carpenters.",
         "category": "outdoor",
         "filePath" : "./src/templates/product.js"
     },
@@ -47,7 +47,7 @@
         "name": "Kitanda Nyota",
         "usPrice": "$500",
         "kesPrice": "kes50,000",
-        "description": "Made from mvule hardwood",
+        "description": "The Mashirbirya chair and Side table re-interprets the mashirbirya pattern from a building element to a domestic object. Made from local Mvule wood by Swahili carpenters, it is a symphony of solid and void, light and shadow, integrating itself into its immediate environment. The minimal, stripped back structure of the chair is intended to frame the handcrafted patterns and highlight the extra-ordinary craftsmanship of the Swahili carpenters.",
         "category": "beds",
         "filePath" : "./src/templates/product.js"
     },
@@ -64,7 +64,7 @@
         "name": "Mashirbirya Table",
         "usPrice": "$500",
         "kesPrice": "kes50,000",
-        "description": "Made from mvule hardwood",
+        "description": "The Mashirbirya chair and Side table re-interprets the mashirbirya pattern from a building element to a domestic object. Made from local Mvule wood by Swahili carpenters, it is a symphony of solid and void, light and shadow, integrating itself into its immediate environment. The minimal, stripped back structure of the chair is intended to frame the handcrafted patterns and highlight the extra-ordinary craftsmanship of the Swahili carpenters.",
         "category": "tables",
         "filePath" : "./src/templates/product.js"
     },
@@ -81,7 +81,7 @@
         "name": "Pembe Chair",
         "usPrice": "$500",
         "kesPrice": "kes50,000",
-        "description": "Made from mvule hardwood",
+        "description": "The Mashirbirya chair and Side table re-interprets the mashirbirya pattern from a building element to a domestic object. Made from local Mvule wood by Swahili carpenters, it is a symphony of solid and void, light and shadow, integrating itself into its immediate environment. The minimal, stripped back structure of the chair is intended to frame the handcrafted patterns and highlight the extra-ordinary craftsmanship of the Swahili carpenters.",
         "category": "seating",
         "filePath" : "./src/templates/product.js"
     }

@@ -5,7 +5,7 @@
     font-family: B;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-bottom: 2rem;
     span {
       color: $text;
@@ -39,6 +39,10 @@
       }
       .product-container {
         width: 100%;
+        padding: 10px;
+        @media (max-width: $s) {
+          padding: 0px;
+        }
         .item-title {
           padding-top: 0.5rem;
           display: flex;
@@ -46,6 +50,11 @@
           flex-direction: column;
           span {
             font-size: $font8;
+            opacity: 0.5;
+            &:last-child {
+              font-style: italic;
+              opacity: 1;
+            }
           }
         }
       }

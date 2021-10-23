@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import { Link } from 'gatsby';
 import Contactform from "../components/contactform";
 
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const transition = { duration: 1, ease: [0.6, -0.05, 0.01, 0.9] }
 
@@ -35,7 +35,7 @@ const Product = ({ pageContext }) => {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    autoplay: false,
+                    autoplay: true,
                     fade: true,
                     speed: 500,
                     dots: false,
@@ -47,9 +47,12 @@ const Product = ({ pageContext }) => {
 
     
     return (
-        <>
+        
+        <AnimatePresence>
         <Contactform contactState={contactState} setContactState={setContactState} />
-        <div className="single-product-wrap">
+        <motion.div className="single-product-wrap"
+        exit={{y:-100}}
+        >
             <div className="container">
                 <div className="back-svg">
                     <Link to="/furniture"><img src={backArrow} alt="arrow back" /></Link>
@@ -77,11 +80,11 @@ const Product = ({ pageContext }) => {
                 <h5>{product.name}</h5>
             </div>
             <div className="item-price">
-                <span>price</span>
+                <span>Price</span>
                 <p>{product.usPrice}<br />{product.kesPrice} </p>
             </div>
             <div className="item-description">
-                <span>description</span>
+                <span>Description</span>
                 <p>{product.description}</p>
             </div>
             <div 
@@ -94,8 +97,9 @@ const Product = ({ pageContext }) => {
             </div>
             </motion.div>
         </div>
-        </div>
-        </>
+        </motion.div>
+        </AnimatePresence>
+        
     );
 }
 
